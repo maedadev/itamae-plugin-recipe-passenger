@@ -1,7 +1,7 @@
 passenger_version = ENV['PASSENGER_VERSION'] || Itamae::Plugin::Recipe::Passenger::PASSENGER_VERSION
 
 execute "download passenger-#{passenger_version}" do
-  cwd '/var/bizside/tmp'
+  cwd '/tmp'
   command <<-EOF
     rm -f passenger-release-#{passenger_version}.tar.gz
     wget https://github.com/phusion/passenger/archive/release-#{passenger_version}.tar.gz -O passenger-release-#{passenger_version}.tar.gz
@@ -17,7 +17,7 @@ directory '/opt/passenger' do
 end
 
 execute "install passenger-#{passenger_version}" do
-  cwd '/var/bizside/tmp'
+  cwd '/tmp'
   command <<-EOF
     rm -Rf passenger-release-#{passenger_version}/
     tar zxf passenger-release-#{passenger_version}.tar.gz
