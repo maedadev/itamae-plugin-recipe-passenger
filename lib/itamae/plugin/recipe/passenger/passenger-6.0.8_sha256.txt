@@ -1,0 +1,1 @@
+ef815fa3cfdd0f7f30c83bb52c931028d90ef8b757e0ed6d3b28e311de25bd73  passenger-release-6.0.8.tar.gz
