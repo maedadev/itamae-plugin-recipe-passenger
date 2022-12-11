@@ -6,7 +6,7 @@ execute "download passenger-#{passenger_version}" do
     rm -f passenger-release-#{passenger_version}.tar.gz
     wget https://github.com/phusion/passenger/archive/release-#{passenger_version}.tar.gz -O passenger-release-#{passenger_version}.tar.gz
   EOF
-  not_if "test -e /opt/passenger/#{passenger_version}/INSTALLED || echo #{::File.read(::File.join(::File.dirname(__FILE__), "passenger-6.0.4_sha256.txt")).strip} | sha256sum -c"
+  not_if "test -e /opt/passenger/#{passenger_version}/INSTALLED || echo #{::File.read(::File.join(::File.dirname(__FILE__), "passenger-#{passenger_version}_sha256.txt")).strip} | sha256sum -c"
 end
 
 directory '/opt/passenger' do
