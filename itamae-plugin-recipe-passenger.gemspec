@@ -5,8 +5,8 @@ require "itamae/plugin/recipe/passenger/version"
 Gem::Specification.new do |spec|
   spec.name          = "itamae-plugin-recipe-passenger"
   spec.version       = Itamae::Plugin::Recipe::Passenger::VERSION
-  spec.authors       = ["y-matsuda"]
-  spec.email         = ["matsuda@lab.acs-jp.com"]
+  spec.authors       = ["y.matsuda"]
+  spec.email         = ["y.matsuda@bizside.biz"]
 
   spec.summary       = %q{itamae recipe for passenger installation}
   spec.description   = %q{itamae recipe for passenger installation}
