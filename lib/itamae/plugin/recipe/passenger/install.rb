@@ -44,7 +44,7 @@ directory '/var/run/passenger-instreg' do
 end
 
 case "#{node.platform_family}-#{node.platform_version}"
-when /rhel-7\.(.*?)/
+when /rhel-7\.(.*?)/, /rhel-8\.(.*?)/
   template '/etc/tmpfiles.d/passenger.conf' do
     user 'root'
     owner 'root'
