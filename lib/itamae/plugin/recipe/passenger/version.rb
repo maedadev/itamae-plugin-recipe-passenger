@@ -2,7 +2,7 @@ module Itamae
   module Plugin
     module Recipe
       module Passenger
-        VERSION = '0.1.6'
+        VERSION = '0.1.7'
 
         PASSENGER_VERSION = [
           PASSENGER_VERSION_MAJOR = '6',
