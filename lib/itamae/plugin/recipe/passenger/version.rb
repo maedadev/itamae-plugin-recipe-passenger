@@ -2,11 +2,11 @@ module Itamae
   module Plugin
     module Recipe
       module Passenger
-        VERSION = '0.2.0'
+        VERSION = '0.2.2'
 
         PASSENGER_VERSION = [
           PASSENGER_VERSION_MAJOR = '6',
-          PASSENGER_VERSION_MINOR = '1',
+          PASSENGER_VERSION_MINOR = '2',
           PASSENGER_VERSION_REVISION = '2'
         ].join('.')
       end
